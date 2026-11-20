@@ -11,12 +11,19 @@
         <div class="nino_logo"><img src="../GAMBAR/logo_background_less.png" alt="Logo">
             <strong>Naufal Nino</strong>
         </div>
-        <nav>
+        <button class="nino_burger" id="nino_burger_btn" aria-label="Toggle Menu">
+            <span class="nino_burger_line"></span>
+            <span class="nino_burger_line"></span>
+            <span class="nino_burger_line"></span>
+        </button>
+        <nav class="nino_nav" id="nino_nav_menu">
             <ul>
                 <li><a href="#nino_home">Home</a></li>
                 <li><a href="#about_nino">About</a></li>
+                <li><a href="#nino-education">My Education</a></li>
                 <li><a href="#nino-skill">Skill</a></li>
                 <li><a href="#nino-project">My Project</a></li>
+                <li><a href="#nino-achievement">My Achievement</a></li>
             </ul>
         </nav>
     </header>
@@ -53,6 +60,22 @@
             </div>
         </section>
 
+        <section class="nino_education" id="nino-education">
+            <h2>Education</h2>
+            <div class="nino_edu_list">
+                <div class="nino_edu_card">
+                    <span class="nino_edu_year">2025 - Now</span>
+                    <h3>University Perjuangan Tasikmalaya</h3>
+                    <p>SI Informatics Engineering</p>
+                </div>
+                <div class="nino_edu_card">
+                    <span class="nino_edu_year">2022 - 2025</span>
+                    <h3>SMK Negeri 2 Tasikmalaya</h3>
+                    <p>Software Engineering</p>
+                </div>
+            </div>
+        </section>
+
         <section class="nino_skill" id="nino-skill">
             <h2>Skill</h2>
             <div class="nino-skill_grid">
@@ -69,24 +92,65 @@
             <div class="nino-project_grid">
                 <div class="nino-project_card">
                     <div class="nino-project_info">
-                        <h3>Pembukuan Warung</h3>
-                        <p>Aplikasi yang digunakan untuk membukukan pemasukan dan pengeluaran warung</p>
+                        <h3>Warung Bookkeeping App</h3>
+                        <p>An application used to record the income and expenses of a small shop (warung)</p>
                         <a href="#">View Project &rarr;</a>
                     </div>
                 </div>
                 <div class="nino-project_card">
                     <div class="nino-project_info">
-                        <h3>Tugas Sistem Operasi</h3>
-                        <p>Tempat Posting untuk tugas Sistem Operasi</p>
+                        <h3>A web platform for posting Operating Systems course assignments</h3>
+                        <p>Posting location for Operating Systems assignments</p>
                         <a href="https://ninozamigo19.github.io/sistem_operasi/">View Project &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="nino_achievement" id="nino-achievement">
+            <h2>My Achievement</h2>
+            <div class="nino_ach_grid">
+                <div class="nino_ach_card">
+                    <img src="/GAMBAR/Sertifikat_python.png" alt="Kaggle Certificate" class="nino_ach_img">
+                    <div class="nino_ach_info">
+                        <h3>Python Education Certificate</h3>
+                        <p>Kaggle &bull; 2026</p>
+                    </div>
+                </div>
+                <div class="nino_ach_card"></div>
+            </div>
+        </section>
+
+        <section class="nino_contact" id="nino-contact">
+            <h2>Contact Me</h2>
+            <p class="nino_contact_subtitle">
+                Interested in collaborating or have a question?
+                Send a message directly using the form below.
+            </p>
+
+            <form action="" class="nino_contact_form" id="nino-form-pesan">
+                <div class="nino_form_group">
+                    <label for="nino_nama">Full Name</label>
+                    <input type="text" id="nino_nama" name="nama" placeholder="Please Input Your Full Name" required>
+                </div>
+
+                <div class="nino_form_group">
+                    <label for="nino_email">Email Address</label>
+                    <input type="email" name="email" id="nino_email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="nino_form_group">
+                    <label for="nino_pesan">Message</label>
+                    <textarea name="pesan" id="nino_pesan" rows="5" placeholder="Write your message here..." required></textarea>   
+                </div>
+
+                <button type="submit" class="btn nino_primary_btn nino_submit_btn">Send Message</button>
+            </form>
+        </section>
     </main>
     
     <footer>
-        <div class="nino-footer_top" id="nino-contact">
+        <div class="nino-footer_top">
             <div>
                 <strong>Naufal Nino Shalaah Ma'shuum Portofolio</strong>
                 <p style="font-size: 0.8rem;">im interested in technology</p>
@@ -96,12 +160,14 @@
                 <div class="nino-footer_gap">|</div>
                 <div class="nino-footer_items"><a href="https://github.com/Ninozamigo19">📧 github/Ninozamigo19</a></div>
                 <div class="nino-footer_gap">|</div>
-                <div class="nino-footer_items">📍 Kota Tasikmalaya, Jawa Barat, Indonesia</div>
+                <div class="nino-footer_items">📍 Tasikmalaya City, West Java, Indonesia</div>
             </div>
         </div>
         <div class="nino-footer_bottom">
             <p>&copy; 2026 Naufal Nino Shalaah Ma'shuum Portofolio. All rights reserved.</p>
         </div>
   </footer>
+
+   <script src="/JS/script.js"></script>
 </body>
 </html>
