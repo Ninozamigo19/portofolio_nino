@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -239,6 +240,7 @@ footer {
     margin-left: 10px;
     padding: 60px 8%;
     color: black;
+    gap: 20px;
 }
 
 .nino_ach_card {
@@ -271,6 +273,9 @@ footer {
     color: #555;
 }
 
+.nino_achievement h2 {
+    margin-bottom: 20px;
+}
 
 .nino_contact {
     color: black;
@@ -467,5 +472,10 @@ footer {
     .nino_skill, .nino_project {
         padding: 40px 5%;
         margin-left: 0;
+    }
+
+    .nino_nav ul :hover {
+        border-bottom: 1px solid rgb(25, 146, 190);
+        
     }
 }
